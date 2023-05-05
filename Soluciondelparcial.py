@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import sqlite3
 
 #Para el punto número 1:
 class CSVReader:
@@ -49,3 +50,5 @@ csv_reader = CSVReader()
 csv_reader.prompt_file_path()  # Preguntar al usuario por la ruta del archivo
 data = csv_reader.read_csv_files()
 print(data)
+
+
