@@ -214,5 +214,5 @@ plt.scatter(roots, np.zeros_like(roots), c='r', s=50)
 plt.show()
 
 
-
+#CABE MENCIONAR QUE PARA LA 18, SE DOCUMENTARON TODAS LAS FUNCIONES Y MÉTODOS EN EL ARCHIVO "PUNTO 18".
 

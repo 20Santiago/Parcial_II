@@ -1,0 +1,21 @@
+ ## **18. Documentación de TODAS las funciones y métodos:**
+
+1. El primer código define una CSVReaderclase que proporciona métodos para leer archivos CSV:
+
+    * El **"\__init\__"** método inicializa el objeto con una ruta de archivo. Si no se proporciona una ruta, se utiliza el directorio de trabajo actual. Si se proporciona una ruta y no existe, ValueErrorse genera una.
+
+    * El **"prompt\_file\_pathmétodo"** solicita al usuario que ingrese una ruta de archivo. Si el usuario ingresa una cadena vacía, se usa el directorio de trabajo actual. Si el usuario ingresa una ruta que no existe, ValueErrorse genera un.
+
+    * El **"choose\_filemétodo"** enumera todos los archivos CSV en la ruta del archivo y solicita al usuario que seleccione uno o más archivos por su índice. El método devuelve una lista de rutas de archivo seleccionadas.
+
+    * El **"read\_csv\_filesmétodo"** se utiliza **choose_filepara** obtener una lista de archivos CSV para leer. Luego lee cada archivo usando pandas y agrega el **DataFrame** resultante a una lista. Si alguno de los archivos está vacío o no se puede leer, ValueErrorse genera un. Finalmente, el método devuelve la lista de DataFrames.
+
+2. El segundo código crea una base de datos SQLite con dos tablas denominadas VENTASy PORCENTAJE. La VENTAStabla tiene cuatro columnas: id, Familia, Presupuestoy Cumplimiento. La PORCENTAJEtabla tiene dos columnas: idy Porcentaje. Los datos se insertan en ambas tablas y luego se ejecuta una consulta de combinación para recuperar datos de ambas tablas. Los datos recuperados se imprimen en la consola.
+
+3. El tercer y cuarto son similares. El tercer código define dos funciones de decoración para las funciones de trazado de **Matplotlib**: **show_ploty add_grid**. Y, el tercer y cuarto código:
+
+    * El **show_plotdecorador** llama a la función envuelta y luego muestra la trama resultante usando **plt.show()**.
+
+    * El **add_griddecorador** llama a la función envuelta y luego agrega una cuadrícula a la trama usando **plt.grid()**.
+
+    * Después de definir los decoradores, el código crea una matriz **numpy** x con algunos valores arbitrarios.
